@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ReactElement } from "react";
-import styles from "../styles/home.module.css";
+import styles from "./ContactLink.module.css";
 
 export default function ContactLink({
   icon,

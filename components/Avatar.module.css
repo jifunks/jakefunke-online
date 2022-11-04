@@ -1,0 +1,11 @@
+.photo {
+  float: right;
+  position: relative;
+  width: 75px;
+  height: 75px;
+  background-size: 100px;
+  background-position: 0px 0px;
+  border-radius: 50%;
+  box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
+  background-image: url('../assets/me.jpg');
+}

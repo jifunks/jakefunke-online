@@ -7,7 +7,7 @@ import Avatar from "../components/avatar";
 import ContactLink from "../components/contact-link";
 import Divider from "../components/divider";
 import Layout from "../components/layout";
-import styles from "../styles/home.module.css";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
