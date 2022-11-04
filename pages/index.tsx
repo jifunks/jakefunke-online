@@ -38,7 +38,7 @@ export default function Home() {
         <ContactLink
           icon={<HiOutlineDocumentText />}
           text="resume"
-          url="/JacobFunke-Resume-2022.pdf" // TODOjf: come back to figure out this
+          url="/JacobFunke-Resume-2022.pdf"
         ></ContactLink>
         <ContactLink
           icon={<FaGithub />}
