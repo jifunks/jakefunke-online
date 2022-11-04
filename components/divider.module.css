@@ -1,0 +1,6 @@
+.divider {
+	height: 6px;
+  background: url(../assets/hr.png) repeat-x 0 0;
+  border: 0;
+  margin:  1em 0 1em 0;
+}
