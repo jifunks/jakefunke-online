@@ -1,8 +1,9 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { Ubuntu } from "@next/font/google";
+import styles from "../styles/home.module.css";
 
-const ubuntu = Ubuntu({ weight: "400", subsets: ['latin'] });
+const ubuntu = Ubuntu({ weight: "400", subsets: ["latin"] });
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -12,7 +13,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           font-family: ${ubuntu.style.fontFamily};
         }
       `}</style>
-      <Component {...pageProps} />
+      <div className={styles.container}>
+        <main className={styles.main}>
+          <Component {...pageProps} />
+        </main>
+      </div>
     </>
-  )
+  );
 }
