@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ReactElement } from "react";
+import { IconContext } from "react-icons/lib";
 import styles from "./ContactLink.module.css";
 
 export default function ContactLink({
@@ -14,7 +15,9 @@ export default function ContactLink({
   return (
     <li>
       <Link href={url} target="_blank">
-        <span className={styles.linkIcon}>{icon}</span>
+        <IconContext.Provider value={{ style: { verticalAlign: "bottom" } }}>
+          {icon}
+        </IconContext.Provider>
         <span className={styles.linkText}>{text}</span>
       </Link>
     </li>

@@ -5,14 +5,5 @@ import styles from "../styles/Home.module.css";
 import { GiCheeseWedge } from "react-icons/gi";
 
 export default function AboutMe({}) {
-  return (
-    <Layout title={"About Me"}>
-      <h1 className={styles.title}>
-        About Me <GiCheeseWedge />
-      </h1>
-      <Divider></Divider>
-      dangerosly cheesy
-      <br />
-    </Layout>
-  );
+  return <Layout title={"About Me"}>dangerosly cheesy</Layout>;
 }

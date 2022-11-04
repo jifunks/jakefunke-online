@@ -12,8 +12,6 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <Layout home>
-      <h1 className={styles.title}>Jake Funke</h1>
-      <Divider />
       <Avatar></Avatar>
       <h2 className={styles.location}>
         <MdLocationPin className="react-icons" />
@@ -61,10 +59,6 @@ export default function Home() {
           url="mailto:jifunks@gmail.com"
         ></ContactLink>
       </ul>
-      <Divider />
-      <Link href="/about-me">Secret Cheese</Link>
-
-      <footer className={styles.footer}>jf 2022</footer>
     </Layout>
   );
 }

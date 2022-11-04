@@ -1,11 +1,13 @@
 import Head from "next/head";
-import Link from "next/link";
+import { GiCheeseWedge } from "react-icons/gi";
+import { FiChevronsLeft } from "react-icons/fi";
 import styles from "../styles/Home.module.css";
 import Divider from "./divider";
+import Footer from "./footer";
 
-const name = "Jake Funke";
-export const siteTitle = "Next.js Sample Website";
-
+Layout.defaultProps = {
+  title: "Jake Funke",
+};
 export default function Layout({
   children,
   home,
@@ -21,14 +23,27 @@ export default function Layout({
         <title>{home ? "Jake Funke" : `Jake Funke -  ${title}`}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>{children}</main>
 
-      {!home && (
+      <main>
+        <h1 className={styles.title}>{title}</h1>
+        <Divider />
+        {children}
+      </main>
+      {home ? (
         <>
-          <Divider />
-          <div className={styles.backToHome}>
-            <Link href="/">← Back to home</Link>
-          </div>
+          <Footer
+            icon={<GiCheeseWedge />}
+            text="Secret Cheese"
+            url={"/about-me"}
+          ></Footer>
+        </>
+      ) : (
+        <>
+          <Footer
+            icon={<FiChevronsLeft />}
+            text="back to home"
+            url={"/"}
+          ></Footer>
         </>
       )}
     </div>
