@@ -3,6 +3,7 @@ import { ReactElement } from "react";
 import Divider from "./divider";
 import styles from "./Footer.module.css";
 import { IconContext } from "react-icons/lib";
+
 export default function Footer({
   icon,
   url,

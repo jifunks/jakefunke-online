@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import Link from "next/link";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { MdLocationPin } from "react-icons/md";
 import { FaGithub, FaLinkedin, FaSoundcloud, FaEnvelope } from "react-icons/fa";
@@ -8,6 +7,7 @@ import ContactLink from "../components/contact-link";
 import Divider from "../components/divider";
 import Layout from "../components/layout";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -24,19 +24,21 @@ export default function Home() {
         </p>
         <p>
           Check out my <a href="http://github.com/jifunks">GitHub</a> for some
-          of my projects. I'm most proud of{" "}
-          <a href="https://github.com/jifunks/botany">botany</a> - a real time
-          plant simulator, and{" "}
+          of my projects. I'm most proud of plant simulator, and{" "}
           <a href="https://github.com/jifunks/taskrpg">taskrpg</a> - gamified
           task management.
         </p>
+        <p>
+          I also do graphic design. Check out some of my work{" "}
+          <Link href="/work">here.</Link>
+        </p>
       </div>
       <Divider />
-      <ul className="nav">
+      <ul className={styles.nav}>
         <ContactLink
           icon={<HiOutlineDocumentText />}
           text="resume"
-          url="../" // TODOjf: come back to figure out this
+          url="/JacobFunke-Resume-2022.pdf" // TODOjf: come back to figure out this
         ></ContactLink>
         <ContactLink
           icon={<FaGithub />}

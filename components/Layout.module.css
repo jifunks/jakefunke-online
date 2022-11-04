@@ -1,0 +1,44 @@
+@media only screen and (max-width: 1170px) {
+  .main {
+    border-style: solid;
+    border-width: 5px;
+    padding: 23px;
+    box-shadow: 0px 5px 10px #00f;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .container {
+    padding: 20px 40px 20px 20px;
+  }
+  .main {
+    margin: 20px 0 0 40px;
+    max-width: 36rem;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #000;
+    padding: 23px;
+    box-shadow: 0px 5px 10px #00f;
+  }
+
+  .wrapper {
+    padding: 20px 20px 20px 20px;
+  }
+}
+
+.title {
+  color: #0000ff;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 5rem;
+}
+
+.react-icons {
+  vertical-align: middle;
+  font-size: 1.8rem;
+  width: 1.25em;
+}

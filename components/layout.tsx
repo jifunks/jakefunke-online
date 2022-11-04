@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { GiCheeseWedge } from "react-icons/gi";
 import { FiChevronsLeft } from "react-icons/fi";
-import styles from "../styles/Home.module.css";
+import styles from "./Layout.module.css";
 import Divider from "./divider";
 import Footer from "./footer";
 
@@ -18,34 +18,35 @@ export default function Layout({
   title?: string;
 }) {
   return (
-    <div>
-      <Head>
-        <title>{home ? "Jake Funke" : `Jake Funke -  ${title}`}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1 className={styles.title}>{title}</h1>
-        <Divider />
-        {children}
+    <div className={styles.container}>
+      <main className={styles.main}>
+        <div>
+          <Head>
+            <title>{home ? "Jake Funke" : `Jake Funke -  ${title}`}</title>
+            <link rel="icon" href="/favicon.ico" />
+          </Head>
+          <h1 className={styles.title}>{title}</h1>
+          <Divider />
+          {children}
+          {home ? (
+            <>
+              <Footer
+                icon={<GiCheeseWedge />}
+                text="Secret Cheese"
+                url={"/about-me"}
+              ></Footer>
+            </>
+          ) : (
+            <>
+              <Footer
+                icon={<FiChevronsLeft />}
+                text="back to home"
+                url={"/"}
+              ></Footer>
+            </>
+          )}
+        </div>
       </main>
-      {home ? (
-        <>
-          <Footer
-            icon={<GiCheeseWedge />}
-            text="Secret Cheese"
-            url={"/about-me"}
-          ></Footer>
-        </>
-      ) : (
-        <>
-          <Footer
-            icon={<FiChevronsLeft />}
-            text="back to home"
-            url={"/"}
-          ></Footer>
-        </>
-      )}
     </div>
   );
 }
