@@ -14,7 +14,7 @@ export default function Home() {
     <Layout home>
       <Avatar></Avatar>
       <h2 className={styles.location}>
-        <MdLocationPin className="react-icons" />
+        <MdLocationPin className={styles["location-pin"]} />
         Santa Barbara, CA
       </h2>
       <div className={styles.content}>
@@ -24,13 +24,15 @@ export default function Home() {
         </p>
         <p>
           Check out my <a href="http://github.com/jifunks">GitHub</a> for some
-          of my projects. I'm most proud of plant simulator, and{" "}
+          of my projects. I'm most proud of{" "}
+          <a href="https://github.com/jifunks/botany">botany</a> - a real time
+          plant simulator, and{" "}
           <a href="https://github.com/jifunks/taskrpg">taskrpg</a> - gamified
           task management.
         </p>
         <p>
           I also do graphic design. Check out some of my work{" "}
-          <Link href="/work">here.</Link>
+          <Link href="/work">here</Link>.
         </p>
       </div>
       <Divider />

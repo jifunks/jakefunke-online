@@ -1,0 +1,18 @@
+.gallery {
+  margin: 1rem 0 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+/* .gallery-item {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+  background-color: blue;
+} */
+
+.gallery-item img {
+  max-width: 75px;
+  max-height: 75px;
+}

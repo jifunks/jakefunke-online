@@ -13,12 +13,12 @@ export default function ContactLink({
   text: string;
 }) {
   return (
-    <li className={styles.contactLink}>
+    <li className={styles["contact-link"]}>
       <Link href={url} target="_blank">
         <IconContext.Provider value={{ style: { verticalAlign: "bottom" } }}>
           {icon}
         </IconContext.Provider>
-        <span className={styles.linkText}>{text}</span>
+        <span className={styles["link-text"]}>{text}</span>
       </Link>
     </li>
   );
