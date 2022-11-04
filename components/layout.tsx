@@ -16,7 +16,7 @@ export default function Layout({
   title?: string;
 }) {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>{home ? "Jake Funke" : `Jake Funke -  ${title}`}</title>
         <link rel="icon" href="/favicon.ico" />

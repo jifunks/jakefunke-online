@@ -1,11 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
-import Head from "next/head";
-import Divider from "../components/divider";
-import styles from "../styles/home.module.css";
-import { MdLocationPin } from "react-icons/md";
-import Avatar from "../components/avatar";
 import Link from "next/link";
+import { HiOutlineDocumentText } from "react-icons/hi";
+import { MdLocationPin } from "react-icons/md";
+import { FaGithub, FaLinkedin, FaSoundcloud, FaEnvelope } from "react-icons/fa";
+import Avatar from "../components/avatar";
+import ContactLink from "../components/contact-link";
+import Divider from "../components/divider";
 import Layout from "../components/layout";
+import styles from "../styles/home.module.css";
 
 export default function Home() {
   return (
@@ -17,7 +19,7 @@ export default function Home() {
         <MdLocationPin className="react-icons" />
         Santa Barbara, CA
       </h2>
-      <div className={styles.bio}>
+      <div className={styles.content}>
         <p>
           Hello! I'm Jake, and I love building web applications. I'm currently a
           Senior Backend Engineer at <a href="https://artera.io">Artera</a>.
@@ -33,39 +35,34 @@ export default function Home() {
       </div>
       <Divider />
       <ul className="nav">
-        <li>
-          <a href="assets/JacobFunke-Resume-2022.pdf">
-            <i className="far fa-file-alt fa-fw"></i>
-            <span className="navlink">resume</span>
-          </a>
-        </li>
-        <li>
-          <a href="http://github.com/jifunks">
-            <i className="fa-brands fa-github fa-fw"></i>
-            <span className="navlink">github</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/jacobfunke/">
-            <i className="fa-brands fa-linkedin fa-fw"></i>
-            <span className="navlink">linkedin</span>
-          </a>
-        </li>
-        <li>
-          <a href="http://soundcloud.com/eyes_low">
-            <i className="fa-brands fa-soundcloud fa-fw"></i>
-            <span className="navlink">soundcloud</span>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:jifunks@gmail.com">
-            <i className="fa-solid fa-envelope fa-fw"></i>
-            <span className="navlink">jifunks@gmail.com</span>
-          </a>
-        </li>
+        <ContactLink
+          icon={<HiOutlineDocumentText />}
+          text="resume"
+          url="../" // TODOjf: come back to figure out this
+        ></ContactLink>
+        <ContactLink
+          icon={<FaGithub />}
+          text="github"
+          url="http://github.com/jifunks"
+        ></ContactLink>
+        <ContactLink
+          icon={<FaLinkedin />}
+          text="linkedin"
+          url="https://www.linkedin.com/in/jacobfunke/"
+        ></ContactLink>
+        <ContactLink
+          icon={<FaSoundcloud />}
+          text="soundcloud"
+          url="http://soundcloud.com/eyes_low"
+        ></ContactLink>
+        <ContactLink
+          icon={<FaEnvelope />}
+          text="jifunks@gmail.com"
+          url="mailto:jifunks@gmail.com"
+        ></ContactLink>
       </ul>
       <Divider />
-      <Link href="/about-me">chese it</Link>
+      <Link href="/about-me">Secret Cheese</Link>
 
       <footer className={styles.footer}>jf 2022</footer>
     </Layout>
