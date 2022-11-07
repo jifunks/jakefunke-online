@@ -15,7 +15,10 @@
 
 .gallery-item img {
   max-width: 75px;
+  object-fit: none;
   max-height: 75px;
+  border: 1px solid black;
+  box-shadow: 0px 5px 10px #00f;
 }
 
 .hero-image img {
