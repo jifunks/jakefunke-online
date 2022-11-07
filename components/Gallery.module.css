@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
+  justify-items: center;
 }
 
 /* .gallery-item {
@@ -15,4 +16,10 @@
 .gallery-item img {
   max-width: 75px;
   max-height: 75px;
+}
+
+.hero-image img {
+  object-fit: contain;
+  display: block;
+  margin: auto;
 }
