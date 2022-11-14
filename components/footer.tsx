@@ -19,7 +19,13 @@ export default function Footer({
       <div className={styles.backToHome}>
         <Link href={url}>
           <IconContext.Provider
-            value={{ style: { verticalAlign: "bottom", marginRight: "0.3em" } }}
+            value={{
+              style: {
+                verticalAlign: "bottom",
+                marginRight: "0.3em",
+                marginBottom: "1px",
+              },
+            }}
           >
             {icon}
           </IconContext.Provider>

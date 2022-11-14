@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { GiCheeseWedge } from "react-icons/gi";
+import { BsQuestionCircleFill } from "react-icons/bs";
 import { FiChevronsLeft } from "react-icons/fi";
 import styles from "./Layout.module.css";
 import Divider from "./divider";
@@ -31,9 +31,9 @@ export default function Layout({
           {home ? (
             <>
               <Footer
-                icon={<GiCheeseWedge />}
-                text="Secret Cheese"
-                url={"/about-me"}
+                icon={<BsQuestionCircleFill />}
+                text="About"
+                url={"/about"}
               ></Footer>
             </>
           ) : (
