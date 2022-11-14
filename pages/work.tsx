@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Gallery from "../components/gallery";
 import Layout from "../components/layout";
@@ -15,7 +16,7 @@ export async function getStaticProps() {
 export default function Work({ galleryImages }: { galleryImages: string[] }) {
   return (
     <Layout title={"Work"}>
-      Its hotdog time
+      Various posters and album artwork I've created
       <Gallery galleryImages={galleryImages}></Gallery>
     </Layout>
   );
