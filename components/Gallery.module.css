@@ -35,4 +35,14 @@
 
 .toggled img {
   box-shadow: 0px 5px 10px #00f;
+  animation: fadeInAnimation ease 0.1s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    box-shadow: 0px 5px 10px #fff;
+  }
+  100% {
+    box-shadow: 0px 5px 10px #00f;
+  }
 }
