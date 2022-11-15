@@ -4,13 +4,18 @@ import { MouseEventHandler } from "react";
 
 export default function GalleryItem({
   onClick,
+  toggled,
   imageUrl,
 }: {
   onClick: MouseEventHandler<HTMLDivElement>;
+  toggled?: boolean;
   imageUrl?: string;
 }) {
   return (
-    <div className={style["gallery-item"]} onClick={onClick}>
+    <div
+      className={`${style["gallery-item"]} ${toggled ? style["toggled"] : ""}`}
+      onClick={onClick}
+    >
       <Image
         src={
           imageUrl ??

@@ -20,7 +20,7 @@ export default function Home() {
       <div className={styles.content}>
         <p>
           Hello! I'm Jake, and I love building web applications. I'm currently a
-          Senior Backend Engineer at <a href="https://artera.io">Artera</a>.
+          Senior Software Engineer at <a href="https://artera.io">Artera</a>.
         </p>
         <p>
           Check out my <a href="http://github.com/jifunks">GitHub</a> for some

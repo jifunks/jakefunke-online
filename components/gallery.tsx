@@ -3,28 +3,37 @@ import React from "react";
 import GalleryItem from "./gallery-item";
 import style from "./Gallery.module.css";
 
+export interface ImageData {
+  path: string;
+  toggledIndex: string;
+}
 export default function Gallery({ galleryImages }: { galleryImages: any }) {
-  const [openImage, setOpenImage] = React.useState(null);
+  const [imageState, setOpenImage] = React.useState<ImageData | null>(null);
 
-  function setImage(image: any) {
-    setOpenImage(image);
+  function setImage(path: string, toggledIndex: string) {
+    if (imageState?.toggledIndex == toggledIndex) {
+      setOpenImage(null);
+      return;
+    }
+    setOpenImage({ path, toggledIndex });
     return;
   }
   return (
     <>
       <div className={style.gallery}>
-        {galleryImages.map((imagePath: string, i: string) => (
+        {galleryImages.map((path: string, i: string) => (
           <GalleryItem
-            imageUrl={imagePath}
+            imageUrl={path}
             key={i}
-            onClick={() => setImage(imagePath)}
+            onClick={() => setImage(path, i)}
+            toggled={imageState?.toggledIndex == i}
           />
         ))}
       </div>
-      {openImage !== null && (
+      {imageState !== null && (
         <div className={style["hero-image"]}>
           <Image
-            src={openImage}
+            src={imageState.path}
             alt={""}
             width={500}
             height={500}
