@@ -33,7 +33,6 @@ export default function Gallery({ galleryImages }: { galleryImages: any }) {
       {imageState && (
         <div className={style["hero-image"]}>
           <Image
-            priority={true}
             src={imageState.path}
             alt={""}
             width={500}
