@@ -33,6 +33,7 @@ export default function Gallery({ galleryImages }: { galleryImages: any }) {
       {imageState !== null && (
         <div className={style["hero-image"]}>
           <Image
+            placeholder="blur"
             src={imageState.path}
             alt={""}
             width={500}
