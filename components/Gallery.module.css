@@ -23,7 +23,7 @@
   object-fit: none;
   max-height: 75px;
   border: 1px solid black;
-  /* box-shadow: 0px 5px 10px #00f; */
+  cursor: pointer;
 }
 
 .hero-image img {
@@ -31,18 +31,10 @@
   display: block;
   margin: auto;
   max-width: 100%;
+  cursor: pointer;
 }
 
 .toggled img {
   box-shadow: 0px 5px 10px #00f;
-  animation: fadeInAnimation ease 0.1s;
 }
 
-@keyframes fadeInAnimation {
-  0% {
-    box-shadow: 0px 5px 10px #fff;
-  }
-  100% {
-    box-shadow: 0px 5px 10px #00f;
-  }
-}
