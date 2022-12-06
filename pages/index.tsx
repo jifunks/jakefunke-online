@@ -27,8 +27,8 @@ export default function Home() {
           of my projects. I'm most proud of{" "}
           <a href="https://github.com/jifunks/botany">botany</a> - a real time
           plant simulator, and{" "}
-          <a href="https://github.com/jifunks/taskrpg">taskrpg</a> - gamified
-          task management.
+          <a href="https://soundworld-fe.vercel.app/">soundworld's guestbook</a>{" "}
+          - old school multimedia guestbook for anonymous content sharing.
         </p>
         <p>
           I also do graphic design. Check out some of my work{" "}
