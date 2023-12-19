@@ -25,7 +25,7 @@ export default function Home() {
         <p>
           I also made <a href="https://github.com/jifunks/botany">botany</a> - a
           real time plant simulator, and{" "}
-          <a href="https://soundworld-fe.vercel.app/">soundworld's guestbook</a>{" "}
+          <a href="https://soundworldsguestbook.com/">soundworld's guestbook</a>{" "}
           - an old school multimedia guestbook for anonymous content sharing.
         </p>
         <p>
