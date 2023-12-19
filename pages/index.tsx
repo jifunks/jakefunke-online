@@ -23,15 +23,13 @@ export default function Home() {
           Senior Software Engineer at <a href="https://artera.io">Artera</a>.
         </p>
         <p>
-          Check out my <a href="http://github.com/jifunks">GitHub</a> for some
-          of my projects. I'm most proud of{" "}
-          <a href="https://github.com/jifunks/botany">botany</a> - a real time
-          plant simulator, and{" "}
+          I also made <a href="https://github.com/jifunks/botany">botany</a> - a
+          real time plant simulator, and{" "}
           <a href="https://soundworld-fe.vercel.app/">soundworld's guestbook</a>{" "}
           - an old school multimedia guestbook for anonymous content sharing.
         </p>
         <p>
-          I also do graphic design. Check out some of my work{" "}
+          I sometimes do graphic design. Check out some of my work{" "}
           <Link href="/work">here</Link>.
         </p>
       </div>
@@ -40,7 +38,7 @@ export default function Home() {
         <ContactLink
           icon={<HiOutlineDocumentText />}
           text="resume"
-          url="/JacobFunke-Resume-2022.pdf"
+          url="/JacobFunke-Resume-2024.pdf"
         ></ContactLink>
         <ContactLink
           icon={<FaGithub />}

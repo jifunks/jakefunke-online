@@ -31,7 +31,7 @@ export default function Footer({
           </IconContext.Provider>
           {text}
         </Link>
-        <footer className={styles.footer}>jf 2022</footer>
+        <footer className={styles.footer}>jf 2024</footer>
       </div>
     </>
   );
