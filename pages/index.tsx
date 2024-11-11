@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { MdLocationPin } from "react-icons/md";
-import { FaGithub, FaLinkedin, FaSoundcloud, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaSoundcloud, FaEnvelope, FaBandcamp } from "react-icons/fa";
 import Avatar from "../components/avatar";
 import ContactLink from "../components/contact-link";
 import Divider from "../components/divider";
@@ -29,7 +29,8 @@ export default function Home() {
           - an old school multimedia guestbook for anonymous content sharing.
         </p>
         <p>
-          I sometimes do graphic design. Check out some of my work{" "}
+          I mostly make music and write code, but
+          occasionally do graphic design. Check out some of my work{" "}
           <Link href="/work">here</Link>.
         </p>
       </div>
@@ -55,6 +56,11 @@ export default function Home() {
           text="soundcloud"
           url="http://soundcloud.com/eyes_low"
         ></ContactLink>
+        <ContactLink
+          icon={<FaBandcamp />}
+          text="bandcamp"
+          url="https://jacobian.bandcamp.com/"
+        />
         <ContactLink
           icon={<FaEnvelope />}
           text="jifunks@gmail.com"
