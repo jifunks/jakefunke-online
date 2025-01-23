@@ -23,8 +23,8 @@ export default function Home() {
           Senior Software Engineer at <a href="https://www.wellthapp.com">Wellth</a>.
         </p>
         <p>
-          I also made <a href="https://github.com/jifunks/botany">botany</a> - a
-          real time plant simulator, and{" "}
+          I also made <a href="https://shopkeep.gg/">shopkeep</a> - a browser MMO, <a href="https://github.com/jifunks/botany">botany</a> - a
+          terminal-based real time plant simulator, and{" "}
           <a href="https://soundworldsguestbook.com/">soundworld's guestbook</a>{" "}
           - an old school multimedia guestbook for anonymous content sharing.
         </p>
