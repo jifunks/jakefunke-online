@@ -22,11 +22,19 @@ export default function Home() {
           Hello! I'm Jake, and I love building web applications. I'm currently a
           Senior Software Engineer at <a href="https://www.wellthapp.com">Wellth</a>.
         </p>
-        <p>
-          I also made <a href="https://shopkeep.gg/">shopkeep</a> - a browser MMO, <a href="https://github.com/jifunks/botany">botany</a> - a
-          terminal-based real time plant simulator, and{" "}
-          <a href="https://soundworldsguestbook.com/">soundworld's guestbook</a>{" "}
-          - an old school multimedia guestbook for anonymous content sharing.
+        <p className={styles.projects}>
+          I made:
+          <span className={styles["project-item"]}>
+            <a href="https://shopkeep.gg/">shopkeep</a> - a multiplayer shop management game
+          </span>
+          <span className={styles["project-item"]}>
+            <a href="https://github.com/jifunks/botany">botany</a> - a
+            terminal-based real time plant simulator
+          </span>
+          <span className={styles["project-item"]}>
+            <a href="https://soundworldsguestbook.com/">soundworld's guestbook</a>{" "}
+            - an old school multimedia guestbook for anonymous content sharing
+          </span>
         </p>
         <p>
           I mostly make music and write code, but
@@ -39,7 +47,7 @@ export default function Home() {
         <ContactLink
           icon={<HiOutlineDocumentText />}
           text="resume"
-          url="/JacobFunke-Resume-2024.pdf"
+          url="/JacobFunke-Resume-2025.pdf"
         ></ContactLink>
         <ContactLink
           icon={<FaGithub />}
