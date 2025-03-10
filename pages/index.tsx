@@ -28,6 +28,9 @@ export default function Home() {
             <a href="https://shopkeep.gg/">shopkeep</a> - a multiplayer shop management game
           </span>
           <span className={styles["project-item"]}>
+            <a href="https://realtarot-production.up.railway.app/">realtarot</a> - tarot readings with realistic deck management and interaction-driven randomization
+          </span>
+          <span className={styles["project-item"]}>
             <a href="https://github.com/jifunks/botany">botany</a> - a
             terminal-based real time plant simulator
           </span>
