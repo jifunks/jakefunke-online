@@ -25,9 +25,6 @@ export default function Home() {
         <p className={styles.projects}>
           I made:
           <span className={styles["project-item"]}>
-            <a href="https://shopkeep.gg/">shopkeep</a> - a multiplayer shop management game
-          </span>
-          <span className={styles["project-item"]}>
             <a href="https://realtarot-production.up.railway.app/">realtarot</a> - tarot readings with realistic deck management and interaction-driven randomization
           </span>
           <span className={styles["project-item"]}>
