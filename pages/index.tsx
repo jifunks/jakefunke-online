@@ -15,7 +15,7 @@ export default function Home() {
       <Avatar></Avatar>
       <h2 className={styles.location}>
         <MdLocationPin className={styles["location-pin"]} />
-        Santa Barbara, CA
+        San Fransisco, CA
       </h2>
       <div className={styles.content}>
         <p>
