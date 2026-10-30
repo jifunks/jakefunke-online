@@ -15,7 +15,7 @@ export default function Home() {
       <Avatar></Avatar>
       <h2 className={styles.location}>
         <MdLocationPin className={styles["location-pin"]} />
-        San Fransisco, CA
+        San Francisco, CA
       </h2>
       <div className={styles.content}>
         <p>
@@ -25,11 +25,11 @@ export default function Home() {
         <p className={styles.projects}>
           I made:
           <span className={styles["project-item"]}>
-            <a href="https://realtarot-production.up.railway.app/">realtarot</a> - tarot readings with realistic deck management and interaction-driven randomization
-          </span>
-          <span className={styles["project-item"]}>
             <a href="https://github.com/jifunks/botany">botany</a> - a
             terminal-based real time plant simulator
+          </span>
+          <span className={styles["project-item"]}>
+            <a href="https://realtarot-production.up.railway.app/">realtarot</a> - tarot readings with realistic deck management and interaction-driven randomization
           </span>
           <span className={styles["project-item"]}>
             <a href="https://soundworldsguestbook.com/">soundworld's guestbook</a>{" "}
